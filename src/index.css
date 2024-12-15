@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+form input,
+form select,
+form button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
