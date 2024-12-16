@@ -80,7 +80,7 @@ const App = () => {
   const addTask = (newTask) => {
     setTasks((prevTasks) => [
       ...prevTasks,
-      { ...newTask, id: prevTasks.length + 1 },
+      { ...newTask, id: prevTasks.at(-1).taskId + 1 },
     ]);
     toast.success("Task added successfully!");
   };
